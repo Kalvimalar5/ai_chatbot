@@ -1,0 +1,97 @@
+{
+  "patients": [
+    {
+      "id": "pat_priya",
+      "name": "Priya Sharma",
+      "phone": "9876501001",
+      "email": "priya.sharma@example.com",
+      "channel": "website",
+      "concern": "Tooth sensitivity",
+      "status": "patient",
+      "last_visit": null,
+      "next_checkup_due": null,
+      "created_at": "2026-11-12T11:29:29"
+    },
+    {
+      "id": "pat_rohan",
+      "name": "Rohan Menon",
+      "phone": "9876501002",
+      "email": "rohan.menon@example.com",
+      "channel": "whatsapp",
+      "concern": "Filling completed",
+      "status": "patient",
+      "last_visit": "2026-11-11",
+      "next_checkup_due": "2027-05-10",
+      "created_at": "2026-11-12T11:29:29"
+    },
+    {
+      "id": "pat_ananya",
+      "name": "Ananya Krishnan",
+      "phone": "9876501003",
+      "email": "ananya.k@example.com",
+      "channel": "whatsapp",
+      "concern": "Wisdom tooth pain",
+      "status": "lead",
+      "last_visit": null,
+      "next_checkup_due": null,
+      "created_at": "2026-11-08T10:15:00",
+      "inquired_at": "2026-11-08T10:15:00",
+      "booked": false
+    },
+    {
+      "id": "pat_karthik",
+      "name": "Karthik Raman",
+      "phone": "9876501004",
+      "email": "karthik.r@example.com",
+      "channel": "phone",
+      "concern": "Routine checkup",
+      "status": "patient",
+      "last_visit": "2026-05-06",
+      "next_checkup_due": "2026-11-01",
+      "created_at": "2026-11-12T11:29:29"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt_priya_tmrw",
+      "patient_id": "pat_priya",
+      "patient_name": "Priya Sharma",
+      "phone": "9876501001",
+      "service": "Consultation",
+      "dentist": "Dr. Meera Iyer",
+      "start": "2026-11-13T10:00:00",
+      "end": "2026-11-13T10:30:00",
+      "status": "booked",
+      "channel": "website",
+      "notes": "Sensitivity on upper left.",
+      "reminder_sent": false,
+      "followup_sent": false
+    },
+    {
+      "id": "apt_rohan_yday",
+      "patient_id": "pat_rohan",
+      "patient_name": "Rohan Menon",
+      "phone": "9876501002",
+      "service": "Filling",
+      "dentist": "Dr. Arjun Rao",
+      "start": "2026-11-11T11:00:00",
+      "end": "2026-11-11T11:30:00",
+      "status": "completed",
+      "channel": "whatsapp",
+      "notes": "Composite filling on molar.",
+      "reminder_sent": true,
+      "followup_sent": false
+    }
+  ],
+  "messages": [],
+  "notifications": [
+    {
+      "id": "ntf_seed",
+      "type": "attention",
+      "title": "Demo clinic is ready",
+      "body": "Seed patients, one booked visit, one completed visit, one lead, and one overdue checkup are loaded.",
+      "read": false,
+      "created_at": "2026-11-12T11:29:29"
+    }
+  ]
+}
